@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/05 17:22:17.000.330,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/08/05 17:22:18.000.906,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:33:15.247,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:33:15.384,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.dfm=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.cpp=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/09/17 13:34:54.042,C:\勉強用フォルダ\sales_information\Project1PCH1.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:35:08.751,C:\勉強用フォルダ\sales_information\SalesInformationPCH1.h=C:\勉強用フォルダ\sales_information\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:35:08.765,C:\勉強用フォルダ\sales_information\SalesInformation.cbproj=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
