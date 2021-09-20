@@ -3,13 +3,20 @@
 	<Transactions>
     <Transaction>2021/08/05 17:22:17.000.330,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
     <Transaction>2021/08/05 17:22:18.000.906,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/17 13:33:15.247,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/17 13:33:15.384,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.dfm=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.cpp=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2021/09/17 13:34:32.941,C:\勉強用フォルダ\sales_information\SaleInformation.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2021/09/17 13:34:54.042,C:\勉強用フォルダ\sales_information\Project1PCH1.h=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/17 13:35:08.751,C:\勉強用フォルダ\sales_information\SalesInformationPCH1.h=C:\勉強用フォルダ\sales_information\Project1PCH1.h</Transaction>
-    <Transaction>2021/09/17 13:35:08.765,C:\勉強用フォルダ\sales_information\SalesInformation.cbproj=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2021/09/17 13:33:15.000.384,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/09/17 13:33:15.000.247,=C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:34:32.000.941,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\勉強用フォルダ\sales_information\SaleInformation.dfm</Transaction>
+    <Transaction>2021/09/17 13:34:32.000.941,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\勉強用フォルダ\sales_information\SaleInformation.h</Transaction>
+    <Transaction>2021/09/17 13:34:32.000.941,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\勉強用フォルダ\sales_information\SaleInformation.cpp</Transaction>
+    <Transaction>2021/09/17 13:34:54.000.042,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\勉強用フォルダ\sales_information\Project1PCH1.h</Transaction>
+    <Transaction>2021/09/17 13:35:08.000.765,C:\Users\omoteya\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\勉強用フォルダ\sales_information\SalesInformation.cbproj</Transaction>
+    <Transaction>2021/09/17 13:35:08.000.751,C:\勉強用フォルダ\sales_information\Project1PCH1.h=C:\勉強用フォルダ\sales_information\SalesInformationPCH1.h</Transaction>
+    <Transaction>2021/09/17 13:37:45.000.268,C:\勉強用フォルダ\sales_information\SaleInformation.dfm=C:\勉強用フォルダ\sales_information\MainForm.dfm</Transaction>
+    <Transaction>2021/09/17 13:37:45.000.268,C:\勉強用フォルダ\sales_information\SaleInformation.h=C:\勉強用フォルダ\sales_information\MainForm.h</Transaction>
+    <Transaction>2021/09/17 13:37:45.000.268,C:\勉強用フォルダ\sales_information\SaleInformation.cpp=C:\勉強用フォルダ\sales_information\MainForm.cpp</Transaction>
+    <Transaction>2021/09/17 14:58:07.000.359,=C:\勉強用フォルダ\sales_information\Unit1.cpp</Transaction>
+    <Transaction>2021/09/17 15:00:56.000.716,C:\勉強用フォルダ\sales_information\Unit1.dfm=C:\勉強用フォルダ\sales_information\DataModule.dfm</Transaction>
+    <Transaction>2021/09/17 15:00:56.000.716,C:\勉強用フォルダ\sales_information\Unit1.h=C:\勉強用フォルダ\sales_information\DataModule.h</Transaction>
+    <Transaction>2021/09/17 15:00:56.000.716,C:\勉強用フォルダ\sales_information\Unit1.cpp=C:\勉強用フォルダ\sales_information\DataModule.cpp</Transaction>
   </Transactions>
 </BorlandProject>

@@ -30,7 +30,7 @@ class TDataModule1 : public TDataModule
 {
 __published:	// IDE で管理されるコンポーネント
 	TFDConnection *FDConnection1;
-	TFDQuery *FDQuery1;
+	TFDQuery *qrySalesInformation;
 	TDataSource *DataSource1;
 	TFDGUIxWaitCursor *FDGUIxWaitCursor1;
 	TFDPhysMSSQLDriverLink *FDPhysMSSQLDriverLink1;

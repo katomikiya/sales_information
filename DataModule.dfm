@@ -3,22 +3,30 @@ object DataModule1: TDataModule1
   Height = 448
   Width = 672
   object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=MSSQL'
+      'User_Name=mikiya')
+    LoginPrompt = False
     Left = 64
-    Top = 48
+    Top = 32
   end
-  object FDQuery1: TFDQuery
+  object qrySalesInformation: TFDQuery
     Connection = FDConnection1
-    Left = 144
-    Top = 112
+    SQL.Strings = (
+      'SELECT *'
+      'FROM sales_information;')
+    Left = 62
+    Top = 104
   end
   object DataSource1: TDataSource
-    Left = 216
-    Top = 112
+    DataSet = qrySalesInformation
+    Left = 152
+    Top = 104
   end
   object FDGUIxWaitCursor1: TFDGUIxWaitCursor
     Provider = 'Forms'
-    Left = 512
-    Top = 360
+    Left = 560
+    Top = 296
   end
   object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
     Left = 568

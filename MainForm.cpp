@@ -6,10 +6,12 @@
 #include "MainForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
+#pragma link "RzDBEdit"
+#pragma link "RzEdit"
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TMainForm1 *MainForm1;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TMainForm1::TMainForm1(TComponent* Owner)
 	: TForm(Owner)
 {
 }
