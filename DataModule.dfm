@@ -4,13 +4,18 @@ object DataModule1: TDataModule1
   Width = 672
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'DriverID=MSSQL'
-      'User_Name=mikiya')
+      'Server=KATO-M-W10\SQLEXPRESS'
+      'Database=sales_information'
+      'User_Name=OMOTEYA'
+      'OSAuthent=Yes'
+      'DriverID=MSSQL')
+    Connected = True
     LoginPrompt = False
     Left = 64
-    Top = 32
+    Top = 24
   end
   object qrySalesInformation: TFDQuery
+    BeforePost = qrySalesInformationBeforePost
     Connection = FDConnection1
     SQL.Strings = (
       'SELECT *'

@@ -40,7 +40,7 @@ __published:	// IDE で管理されるコンポーネント
 	TButton *btnF5;
 	TTimer *Timer1;
 	TNotificationCenter *NotificationCenter1;
-	TDBEdit *SalesDestinationCode;
+	TDBEdit *edSalesDestinationCode;
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
@@ -50,18 +50,30 @@ __published:	// IDE で管理されるコンポーネント
 	TLabel *Label7;
 	TLabel *Label8;
 	TLabel *Label9;
-	TDBEdit *SalesDesitnationName;
-	TDBEdit *ItemCode;
-	TDBEdit *ItemName;
-	TRzDBNumericEdit *Amount;
-	TDBEdit *Unit;
-	TRzDBNumericEdit *UnitPrice;
-	TRzDBNumericEdit *Price;
-	TDBEdit *Remarks;
+	TDBEdit *edSalesDesitnationName;
+	TDBEdit *edItemCode;
+	TDBEdit *edItemName;
+	TRzDBNumericEdit *nedAmount;
+	TDBEdit *edUnit;
+	TRzDBNumericEdit *nedUnitPrice;
+	TRzDBNumericEdit *nedPrice;
+	TDBEdit *edRemarks;
 	TButton *btnRegister;
+	TLabel *Label10;
+	TLabel *Label11;
+	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall btnF4Click(TObject *Sender);
+	void __fastcall btnF9Click(TObject *Sender);
+	void __fastcall btnF12Click(TObject *Sender);
+	bool __fastcall CloseApplication();
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall btnRegisterClick(TObject *Sender);
+	void __fastcall FormKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
 private:	// ユーザー宣言
+	String FUserID;
 public:		// ユーザー宣言
 	__fastcall TMainForm1(TComponent* Owner);
+	__fastcall TMainForm1::~TMainForm1();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TMainForm1 *MainForm1;

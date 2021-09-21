@@ -121,6 +121,7 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <LinkPackageStatics>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;RaizeComponentsVcl.lib;vclx.lib;RaizeComponentsVclDb.lib;vclFireDAC.lib;FireDAC.lib;FireDACSqliteDriver.lib;FireDACCommonDriver.lib;FireDACCommon.lib;xmlrtl.lib;FireDACCommonODBC.lib;FireDACMSSQLDriver.lib</LinkPackageStatics>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <Debugger_RunParams>mikiya</Debugger_RunParams>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>

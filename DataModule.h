@@ -34,9 +34,13 @@ __published:	// IDE で管理されるコンポーネント
 	TDataSource *DataSource1;
 	TFDGUIxWaitCursor *FDGUIxWaitCursor1;
 	TFDPhysMSSQLDriverLink *FDPhysMSSQLDriverLink1;
+	void __fastcall qrySalesInformationBeforePost(TDataSet *DataSet);
 private:	// ユーザー宣言
+	String	FUser;
 public:		// ユーザー宣言
 	__fastcall TDataModule1(TComponent* Owner);
+
+        __property String UserID = { write=FUser };
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TDataModule1 *DataModule1;

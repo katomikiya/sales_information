@@ -2,8 +2,8 @@ object MainForm1: TMainForm1
   Left = 0
   Top = 0
   Caption = 'MainForm1'
-  ClientHeight = 613
-  ClientWidth = 926
+  ClientHeight = 617
+  ClientWidth = 958
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,12 +11,14 @@ object MainForm1: TMainForm1
   Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
   PixelsPerInch = 96
   TextHeight = 11
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 926
+    Width = 958
     Height = 81
     Align = alTop
     Caption = #36009#22770#24773#22577#31649#29702#12471#12473#12486#12512
@@ -32,7 +34,7 @@ object MainForm1: TMainForm1
     Left = 0
     Top = 81
     Width = 337
-    Height = 465
+    Height = 469
     Align = alLeft
     Caption = 'Panel2'
     TabOrder = 1
@@ -40,18 +42,82 @@ object MainForm1: TMainForm1
       Left = 1
       Top = 1
       Width = 335
-      Height = 438
+      Height = 442
       Align = alClient
+      DataSource = DataModule1.DataSource1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+      Font.Style = []
+      ParentFont = False
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -11
       TitleFont.Name = #65325#65331' '#65328#12468#12471#12483#12463
       TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'sales_destination_name'
+          Title.Caption = #36009#22770#20808#21517
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -13
+          Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'item_name'
+          Title.Caption = #21830#21697#21517
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -13
+          Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'amount'
+          Title.Caption = #25968#37327
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -13
+          Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+          Title.Font.Style = [fsBold]
+          Width = 53
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'unit'
+          Title.Caption = #21336#20301
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -13
+          Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'price'
+          Title.Caption = #37329#38989
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clWindowText
+          Title.Font.Height = -13
+          Title.Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
+          Title.Font.Style = [fsBold]
+          Visible = True
+        end>
     end
     object DBNavigator1: TDBNavigator
       Left = 1
-      Top = 439
+      Top = 443
       Width = 335
       Height = 25
       Align = alBottom
@@ -59,10 +125,10 @@ object MainForm1: TMainForm1
     end
   end
   object Panel3: TPanel
-    Left = 336
+    Left = 337
     Top = 81
-    Width = 590
-    Height = 465
+    Width = 621
+    Height = 469
     Align = alRight
     BevelKind = bkTile
     Font.Charset = DEFAULT_CHARSET
@@ -72,9 +138,11 @@ object MainForm1: TMainForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 2
+    ExplicitLeft = 342
+    ExplicitTop = 84
     object Label1: TLabel
       Left = 27
-      Top = 37
+      Top = 27
       Width = 87
       Height = 16
       Caption = #36009#22770#20808#12467#12540#12489
@@ -87,7 +155,7 @@ object MainForm1: TMainForm1
     end
     object Label2: TLabel
       Left = 38
-      Top = 88
+      Top = 78
       Width = 64
       Height = 16
       Caption = #36009#22770#20808#21517
@@ -100,7 +168,7 @@ object MainForm1: TMainForm1
     end
     object Label3: TLabel
       Left = 35
-      Top = 135
+      Top = 125
       Width = 71
       Height = 16
       Caption = #21830#21697#12467#12540#12489
@@ -113,7 +181,7 @@ object MainForm1: TMainForm1
     end
     object Label4: TLabel
       Left = 46
-      Top = 184
+      Top = 174
       Width = 48
       Height = 16
       Caption = #21830#21697#21517
@@ -126,112 +194,153 @@ object MainForm1: TMainForm1
     end
     object Label5: TLabel
       Left = 54
-      Top = 233
+      Top = 223
       Width = 32
       Height = 16
       Caption = #25968#37327
     end
     object Label6: TLabel
       Left = 54
-      Top = 331
+      Top = 321
       Width = 32
       Height = 16
       Caption = #21336#20385
     end
     object Label7: TLabel
       Left = 54
-      Top = 380
+      Top = 370
       Width = 32
       Height = 16
       Caption = #37329#38989
     end
     object Label8: TLabel
       Left = 54
-      Top = 429
+      Top = 419
       Width = 32
       Height = 16
       Caption = #20633#32771
     end
     object Label9: TLabel
       Left = 54
-      Top = 282
+      Top = 272
       Width = 32
       Height = 16
       Caption = #21336#20301
     end
-    object SalesDestinationCode: TDBEdit
+    object Label10: TLabel
+      Left = 270
+      Top = 371
+      Width = 16
+      Height = 16
+      Caption = #20870
+    end
+    object Label11: TLabel
+      Left = 212
+      Top = 324
+      Width = 16
+      Height = 16
+      Caption = #20870
+    end
+    object edSalesDestinationCode: TDBEdit
       Left = 132
-      Top = 36
+      Top = 26
       Width = 157
       Height = 24
+      DataField = 'sales_destinatin_code'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imDisable
       TabOrder = 0
     end
-    object SalesDesitnationName: TDBEdit
+    object edSalesDesitnationName: TDBEdit
       Left = 132
-      Top = 82
+      Top = 72
       Width = 157
       Height = 24
+      DataField = 'sales_destination_name'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imHira
       TabOrder = 1
     end
-    object ItemCode: TDBEdit
+    object edItemCode: TDBEdit
       Left = 132
-      Top = 130
+      Top = 122
       Width = 157
       Height = 24
+      DataField = 'item_code'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imDisable
       TabOrder = 2
     end
-    object ItemName: TDBEdit
+    object edItemName: TDBEdit
       Left = 132
-      Top = 178
+      Top = 168
       Width = 157
       Height = 24
+      DataField = 'item_name'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imHira
       TabOrder = 3
     end
-    object Unit: TDBEdit
+    object edUnit: TDBEdit
       Left = 132
-      Top = 274
+      Top = 264
       Width = 77
       Height = 24
+      DataField = 'unit'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imHira
       TabOrder = 5
     end
-    object UnitPrice: TRzDBNumericEdit
-      Left = 132
-      Top = 330
+    object nedUnitPrice: TRzDBNumericEdit
+      Left = 129
+      Top = 318
       Width = 77
       Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'unit_price'
       Alignment = taLeftJustify
+      ImeMode = imDisable
       TabOrder = 6
       DisplayFormat = ',0;(,0)'
     end
-    object Price: TRzDBNumericEdit
+    object nedPrice: TRzDBNumericEdit
       Left = 132
-      Top = 378
+      Top = 368
       Width = 133
       Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'price'
       Alignment = taLeftJustify
+      ImeMode = imDisable
       TabOrder = 7
       DisplayFormat = ',0;(,0)'
     end
-    object Amount: TRzDBNumericEdit
+    object nedAmount: TRzDBNumericEdit
       Left = 132
-      Top = 226
+      Top = 219
       Width = 77
       Height = 24
+      DataSource = DataModule1.DataSource1
+      DataField = 'amount'
       Alignment = taLeftJustify
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -16
       Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
       Font.Style = []
+      ImeMode = imDisable
       ParentFont = False
       TabOrder = 4
       DisplayFormat = ',0;(,0)'
     end
-    object Remarks: TDBEdit
+    object edRemarks: TDBEdit
       Left = 132
-      Top = 426
+      Top = 416
       Width = 253
       Height = 24
+      DataField = 'remarks'
+      DataSource = DataModule1.DataSource1
+      ImeMode = imHira
       TabOrder = 8
     end
     object btnRegister: TButton
@@ -250,12 +359,13 @@ object MainForm1: TMainForm1
       ParentBiDiMode = False
       ParentFont = False
       TabOrder = 9
+      OnClick = btnRegisterClick
     end
   end
   object Panel4: TPanel
     Left = 0
-    Top = 546
-    Width = 926
+    Top = 550
+    Width = 958
     Height = 67
     Align = alBottom
     TabOrder = 3
@@ -362,6 +472,7 @@ object MainForm1: TMainForm1
       ParentFont = False
       TabOrder = 8
       TabStop = False
+      OnClick = btnF12Click
     end
     object btnF9: TButton
       Left = 635
@@ -382,6 +493,7 @@ object MainForm1: TMainForm1
       ParentFont = False
       TabOrder = 9
       TabStop = False
+      OnClick = btnF9Click
     end
     object btnF4: TButton
       Left = 219
@@ -402,6 +514,7 @@ object MainForm1: TMainForm1
       ParentFont = False
       TabOrder = 10
       TabStop = False
+      OnClick = btnF4Click
     end
     object btnF5: TButton
       Left = 323
@@ -424,6 +537,7 @@ object MainForm1: TMainForm1
     end
   end
   object Timer1: TTimer
+    OnTimer = Timer1Timer
     Left = 760
     Top = 24
   end
