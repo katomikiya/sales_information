@@ -68,12 +68,15 @@ __published:	// IDE で管理されるコンポーネント
 	bool __fastcall CloseApplication();
 	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
 	void __fastcall btnRegisterClick(TObject *Sender);
+	void __fastcall DBGrid1MouseWheel(TObject *Sender, TShiftState Shift, int WheelDelta,
+          TPoint &MousePos, bool &Handled);
+	void __fastcall FormKeyPress(TObject *Sender, System::WideChar &Key);
 	void __fastcall FormKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
+
 private:	// ユーザー宣言
 	String FUserID;
 public:		// ユーザー宣言
-	__fastcall TMainForm1(TComponent* Owner);
-	__fastcall TMainForm1::~TMainForm1();
+	__fastcall TMainForm1(TComponent* Owner);;
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TMainForm1 *MainForm1;
