@@ -9,7 +9,6 @@ object DataModule1: TDataModule1
       'User_Name=OMOTEYA'
       'OSAuthent=Yes'
       'DriverID=MSSQL')
-    Connected = True
     LoginPrompt = False
     Left = 64
     Top = 24
