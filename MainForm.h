@@ -16,8 +16,8 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Grids.hpp>
 #include <Vcl.Mask.hpp>
-#include "frxClass.hpp"
 #include "frxDBSet.hpp"
+#include "frxClass.hpp"
 //---------------------------------------------------------------------------
 class TMainForm1 : public TForm
 {
@@ -63,9 +63,9 @@ __published:	// IDE で管理されるコンポーネント
 	TButton *btnRegister;
 	TLabel *Label10;
 	TLabel *Label11;
+	TButton *Button1;
 	TfrxReport *frxReport1;
 	TfrxDBDataset *frxDBDataset1;
-	TButton *Button1;
 	void __fastcall Timer1Timer(TObject *Sender);
 	void __fastcall btnF4Click(TObject *Sender);
 	void __fastcall btnF9Click(TObject *Sender);
