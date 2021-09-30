@@ -16,8 +16,11 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Grids.hpp>
 #include <Vcl.Mask.hpp>
-#include "frxDBSet.hpp"
 #include "frxClass.hpp"
+#include "frxDBSet.hpp"
+#include "frxExportBaseDialog.hpp"
+#include "frxExportCSV.hpp"
+#include "frxExportPDF.hpp"
 //---------------------------------------------------------------------------
 class TMainForm1 : public TForm
 {
@@ -60,24 +63,26 @@ __published:	// IDE で管理されるコンポーネント
 	TRzDBNumericEdit *nedUnitPrice;
 	TRzDBNumericEdit *nedPrice;
 	TDBEdit *edRemarks;
-	TButton *btnRegister;
+	TButton *btnDelete;
 	TLabel *Label10;
 	TLabel *Label11;
 	TButton *Button1;
 	TfrxReport *frxReport1;
 	TfrxDBDataset *frxDBDataset1;
+	TfrxPDFExport *frxPDFExport1;
+	TfrxCSVExport *frxCSVExport1;
 	void __fastcall Timer1Timer(TObject *Sender);
 	void __fastcall btnF4Click(TObject *Sender);
 	void __fastcall btnF9Click(TObject *Sender);
 	void __fastcall btnF12Click(TObject *Sender);
 	bool __fastcall CloseApplication();
 	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
-	void __fastcall btnRegisterClick(TObject *Sender);
 	void __fastcall DBGrid1MouseWheel(TObject *Sender, TShiftState Shift, int WheelDelta,
           TPoint &MousePos, bool &Handled);
 	void __fastcall FormKeyPress(TObject *Sender, System::WideChar &Key);
 	void __fastcall FormKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall btnF5Click(TObject *Sender);
 
 private:	// ユーザー宣言
 	String FUserID;

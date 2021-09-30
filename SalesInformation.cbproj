@@ -61,14 +61,14 @@
         <ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
         <ProjectType>CppVCLApplication</ProjectType>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
-        <AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;RaizeComponentsVcl.lib;vclx.lib;RaizeComponentsVclDb.lib;vclFireDAC.lib;FireDAC.lib;FireDACSqliteDriver.lib;FireDACCommonDriver.lib;FireDACCommon.lib;xmlrtl.lib;FireDACCommonODBC.lib;FireDACMSSQLDriver.lib</AllPackageLibs>
+        <AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;RaizeComponentsVcl.lib;vclx.lib;RaizeComponentsVclDb.lib;vclFireDAC.lib;FireDAC.lib;FireDACSqliteDriver.lib;FireDACCommonDriver.lib;FireDACCommon.lib;xmlrtl.lib;FireDACCommonODBC.lib;FireDACMSSQLDriver.lib;frx26.lib;fs26.lib;vclimg.lib;frxDB26.lib;fsDB26.lib</AllPackageLibs>
         <_TCHARMapping>wchar_t</_TCHARMapping>
         <Multithreaded>true</Multithreaded>
         <Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
         <UWP_CppLogo44>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_44.png</UWP_CppLogo44>
         <UWP_CppLogo150>$(BDS)\bin\Artwork\Windows\UWP\cppreg_UwpDefault_150.png</UWP_CppLogo150>
-        <IncludePath>C:\勉強用フォルダ\sales_information\;$(IncludePath)</IncludePath>
-        <ILINK_LibraryPath>C:\勉強用フォルダ\sales_information\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+        <IncludePath>C:\Program Files (x86)\FastReports\LibD26\;C:\勉強用フォルダ\sales_information\;$(IncludePath)</IncludePath>
+        <ILINK_LibraryPath>C:\Program Files (x86)\FastReports\LibD26\;C:\勉強用フォルダ\sales_information\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <SanitizedProjectName>SalesInformation</SanitizedProjectName>
         <VerInfo_Locale>1041</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
@@ -119,7 +119,7 @@
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <LinkPackageStatics>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;RaizeComponentsVcl.lib;vclx.lib;RaizeComponentsVclDb.lib;vclFireDAC.lib;FireDAC.lib;FireDACSqliteDriver.lib;FireDACCommonDriver.lib;FireDACCommon.lib;xmlrtl.lib;FireDACCommonODBC.lib;FireDACMSSQLDriver.lib</LinkPackageStatics>
+        <LinkPackageStatics>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;RaizeComponentsVcl.lib;vclx.lib;RaizeComponentsVclDb.lib;vclFireDAC.lib;FireDAC.lib;FireDACSqliteDriver.lib;FireDACCommonDriver.lib;FireDACCommon.lib;xmlrtl.lib;FireDACCommonODBC.lib;FireDACMSSQLDriver.lib;frx26.lib;fs26.lib;vclimg.lib;frxDB26.lib;fsDB26.lib</LinkPackageStatics>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Debugger_RunParams>mikiya</Debugger_RunParams>
     </PropertyGroup>
